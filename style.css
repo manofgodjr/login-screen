@@ -7,12 +7,13 @@ position: absolute;
 @media (max-width:716px){
     .main-section{
         display: flex;
-flex-basis: content;    
+        flex-direction: column;
     }
 
     .first-frame{
         visibility: hidden;
     }
+    
  
 
 }
