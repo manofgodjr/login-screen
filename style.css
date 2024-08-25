@@ -37,9 +37,9 @@
 
 .right{
     position: absolute;
-    left: 750px;
+    left: 600px;
     display: flex;
-    right: 250px;
+    right: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -60,14 +60,9 @@
     .right{
     
         position: absolute;
-    left: 0px;
-    display: flex;
+    left: 100px;
     right: 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    float: right;
+
     }
 
     .right-section-container input{
@@ -83,22 +78,6 @@
     }
 
 
-    .grid-text-post-utme, 
-    .grid-text-remes, 
-    .grid-text-cmli, 
-    .grid-text-jupeb, 
-    .grid-text-ioe, 
-    .grid-text-ccsca,  
-    .grid-text-ibs,
-    .grid-text-codl,  
-    .grid-text-uitics,  
-    .grid-text-inter-uni 
-    {
-
-        
-
-
-    }
 
 }
 
