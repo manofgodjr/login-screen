@@ -1,109 +1,173 @@
-.main-section{
-    display: flex;
-    flex-direction:row;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
 
 }
-@media (max-width:716px){
-    .main-section{
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.left{
+    position: fixed;
+    width: 27%;
+    background-color: yellow;
+    height: 100vh;
+    top: 0;
+    z-index: 110;
+
+
+
+   
+}
+
+
+.left .imgbox img{
+    object-fit: contain;
+    width: 100%;
+
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+@media(max-width: 768px){
+    .left{
+        display: none;
+        width: 100%;
+        background-color: yellow;
+        height: 100vh;
+        
+    
+       
+    }
+    .right{
+    
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        max-width: 100%;
-        justify-content:center;
-        align-items:center;
-    }
-
-    .first-frame{
-        display: none;
-    }
-
-    .second-frame{
-        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
         position: fixed;
-        top: 0;
-        left: 0;
-        
+        height: fit-content;
+
     }
+
+    .right-section-container input{
+        width: 50%;
+        height: 57px;
+        border: 2px solid rgb(0, 4, 75);
+        border-radius: 3px;
+        margin-bottom: 21px;
+    }
+    .right-section-container button{
+        width: 50%;
+        height: 57px;
+        border: 1px solid rgb(0, 4, 75);
+        border-radius: 3px;
+        margin-bottom: 17px;
+    background-color: rgb(0, 4, 75);
+    color: #fff;
+    margin-bottom: 51px;
+    border: none;
+    background-color: aqua;
     
- 
+    
+    }
+
+    .grid-text-card-container {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 51px 51px 51px;
+        column-gap: 20px;
+    row-gap: 20px;
+    position: relative;
+    width: 30%;
+    justify-content: center;
+    
+    }
 
 }
 
 
 
-.second-frame{
+
+
+
+
+
+.right-section-container{
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     width: 100%;
+    max-width: 90%;
     
 
 }
-.second-frame h5{
-    color: rgb(0, 4, 75);
-    font-weight: 300;
-    padding-top: 7px;
-    font-size: 1.05rem;
-    text-align: center;
-    margin-bottom: 39px;
-    margin-top: 11px;
-}
-.second-frame h2{
+.right-section-container h2{
     color: rgb(0, 4, 75);
     font-weight: 700;
-    padding-top: 7px;
+    padding-top: 8px;
     font-size: 1.75rem;
     text-align: center;
     margin-bottom: 39px;
     margin-top: 11px;
 }
-.second-frame img{
+.right-section-container img{
     height: 120px;
     margin-top: 30px;
 }
 
-.first-frame{
-height:100%;
-    background-color: blueviolet;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-}
-
-.first-frame img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
 
 
 
-.second-frame input{
-    width: 71%;
-    height: 41px;
+.right-section-container input{
+    width: 31%;
+    height: 57px;
     border: 2px solid rgb(0, 4, 75);
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 21px;
 }
-.second-frame button{
-    width: 73%;
-    height: 41px;
-    border: 2px solid rgb(0, 4, 75);
-    border-radius: 5px;
+.right-section-container button{
+    width: 31%;
+    height: 57px;
+    border: 1px solid rgb(0, 4, 75);
+    border-radius: 3px;
     margin-bottom: 17px;
 background-color: rgb(0, 4, 75);
 color: #fff;
 margin-bottom: 51px;
+border: none;
+
 
 }
 .grid-text-card-container{
     display: grid;
-    grid-template-columns: 151px 151px 151px;
+    grid-template-columns: 191px 191px 191px;
     column-gap: 20px;
 row-gap: 20px;
 position: relative;
-    width:50%;
+width: 100%;
+justify-content: center;
+
 
 }
 .grid-text-post-utme, 
@@ -177,10 +241,22 @@ text-decoration-color: rgba(0, 0, 0, .87);
 cursor: pointer;
 }
 .grid-text-card-container span{
-  color: rgb(0, 4, 75);
+    color: rgb(0, 4, 75);
     font-weight: 700;
-    padding: 7px;
-    font-size: 1.05rem;
+    padding-top: 8px;
+    font-size: 1.75rem;
     text-align: center;
-    margin-bottom: 9px;
+    margin-bottom: 19px;
+    text-wrap:wrap;
+    text-overflow: clip;
+
 }
+.grid-text-card-container h5{
+    text-align: center;
+color: black;    
+text-wrap:wrap;
+
+}
+
+
+
