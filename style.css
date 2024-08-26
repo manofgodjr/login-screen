@@ -6,7 +6,9 @@
     background-color: whitesmoke;
 
 }
-
+body{
+    overflow: auto;
+}
 .container{
     position: relative;
     display: flex;
