@@ -1,194 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    background-color: whitesmoke;
+@media (max-width:647px){
+.left-side .imgbox img{
+        display: none;    
+    }
 
 }
-body{
-    overflow: auto;
+
+
+.container-wrapper{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+
 }
-.container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* beginning of the left side container */
+.left-side{
+    max-height: 100%;
     height: 100vh;
-    width: 100%;
-    
+ 
+
+
 }
-.left{
-    position: fixed;
-    width: 27%;
+
+
+.left-side .imgbox img{
+    width: 100%;
     height: 100vh;
-    top: 0;
-    z-index: 110;
-
-
-
-   
-}
-
-
-.left .imgbox img{
-    object-fit: contain;
-    width: 100%;
+  
 
 }
 
-.right{
-    position: absolute;
-    left: 600px;
+/* beginning of right side container */
+.right-side{
     display: flex;
-    right: 400px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+.logo-textfield-container{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-    float: right;
+  
 
 }
-
-@media(max-width: 768px){
-    .left{
-        display: none;
-        width: 100%;
-        height: 100vh;
-        
-    
-       
-    }
-    .right{
-    
-        position: absolute;
-    left: 21px;
-    right: -21px;
-
-    }
-
-    .right-section-container input{
-        width: 100%;
-        
-   
-
-    }
-    .right-section-container button{
-
-        width: 90%;
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-
-.right-section-container{
-
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    
-
-}
-.right-section-container h2{
+.logo-textfield-container h2{
     color: rgb(0, 4, 75);
     font-weight: 700;
     padding-top: 8px;
     font-size: 1.45rem;
-    margin-bottom: 39px;
-    margin-top: 11px;
-    position: relative;
-    display: block;
-    justify-content: center;
-    left: 39px;
+    margin-bottom: 21px;
 }
-.right-section-container img{
-    position: relative;
-    display: block;
-    justify-content: center;
-    left: 109px;
+.logo-textfield-container img{
     height: 120px;
-    margin-top: 30px;
+    margin-top: 11px;
 }
-
-
-
-
-.right-section-container input{
-    width: 100%;
-    display: block;
-    height: 57px;
+.logo-textfield-container input{
+    width: 40vw;
+    height: 40px;
     border: 2px solid rgb(0, 4, 75);
     border-radius: 3px;
     margin-bottom: 21px;
-    flex-shrink: 0;
 }
-.right-section-container button{
-    display: block;
-    width: 100%;
-    height: 57px;
+.logo-textfield-container button{
+    width: 41vw;
+    height: 41px;
     border: 1px solid rgb(0, 4, 75);
     border-radius: 3px;
-    margin-bottom: 17px;
-background-color: rgb(0, 4, 75);
-color: #fff;
-margin-bottom: 51px;
-border: none;
-flex-shrink: 0;
+    background-color: rgb(0, 4, 75);
+    color: #fff;
+    margin-bottom: 41px;
 
 
 }
 
-.grid-text-post-utme, 
-.grid-text-remes, 
-.grid-text-cmli, 
-.grid-text-jupeb, 
-.grid-text-ioe, 
-.grid-text-ccsca,  
-.grid-text-ibs,
-.grid-text-codl,  
-.grid-text-uitics,  
-.grid-text-inter-uni 
-{
+
+/* grid card and it content starts here */
+
+.grid-card{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.grid-card .grid-card-content{
+
     border-radius: 5px;
     box-shadow: 3px 5px 15px rgb(0, 0, 0, .4);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 97px;
+    width: 91%;
     height: 200px;
-    position: relative;
-    float: left;
-    margin-bottom: 14px;
-    margin-right: 11px;
+    margin-left: 11px;
+    margin-bottom: 11px;
+ 
     padding-top: 0px;
-    margin-left: 4px;
 }
-.grid-text-post-utme:hover .tooltip-post-utme,  
-.grid-text-remes:hover .tooltip-remes, 
-.grid-text-cmli:hover .tooltip-cmli, 
-.grid-text-jupeb:hover .tooltip-jupeb, 
-.grid-text-ioe:hover .tooltip-ioe, 
-.grid-text-ccsca:hover .tooltip-ccsca,  
-.grid-text-ibs:hover .tooltip-ibs, 
-.grid-text-codl:hover .tooltip-codl,  
-.grid-text-uitics:hover .tooltip-uitics,  
-.grid-text-inter-uni:hover .tooltip-inter-uni 
-
-{
-    opacity: 1;
-    
-}
-
 .tooltip-post-utme,
 .tooltip-inter-uni,
 .tooltip-uitics,
@@ -213,17 +120,7 @@ flex-shrink: 0;
 
 }
 
-
-.grid-text-post-utme, 
-.grid-text-remes, 
-.grid-text-cmli, 
-.grid-text-jupeb, 
-.grid-text-ioe, 
-.grid-text-ccsca,  
-.grid-text-ibs,
-.grid-text-codl,  
-.grid-text-uitics,  
-.grid-text-inter-uni,  a{
+.grid-card-content, a{
 text-align: center;
 text-overflow:clip;
 text-wrap:wrap;
@@ -231,36 +128,8 @@ text-align-last: center;
 text-decoration-color: rgba(0, 0, 0, .87);
 cursor: pointer;
 }
-.grid-text-post-utme, 
-.grid-text-remes, 
-.grid-text-cmli, 
-.grid-text-jupeb, 
-.grid-text-ioe, 
-.grid-text-ccsca,  
-.grid-text-ibs,
-.grid-text-codl,  
-.grid-text-uitics,  
-.grid-text-inter-uni,  span{
-    color: rgb(0, 4, 75);
-    font-weight: 700;
-    font-size: 1.05rem;
-    text-align: center;
-    margin-bottom: 19px;
-    text-wrap:wrap;
-    text-overflow: clip;
-    margin-top: 0px;
 
-}
-.grid-text-post-utme, 
-.grid-text-remes, 
-.grid-text-cmli, 
-.grid-text-jupeb, 
-.grid-text-ioe, 
-.grid-text-ccsca,  
-.grid-text-ibs,
-.grid-text-codl,  
-.grid-text-uitics,  
-.grid-text-inter-uni,  h5{
+.grid-card-content, h5{
     text-align: center;
 color: black;    
 text-wrap:wrap;
@@ -270,5 +139,29 @@ margin-bottom: 19px;
 
 }
 
+.grid-card-content, h3{
+    color: rgb(0, 4, 75);
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 19px;
+    text-wrap:wrap;
+    text-overflow: clip;
 
+}
 
+.grid-card-content:hover .tooltip-post-utme,  
+.grid-card-content:hover .tooltip-cmli, 
+.grid-card-content:hover .tooltip-ccsca, 
+.grid-card-content:hover .tooltip-jupeb, 
+.grid-card-content:hover .tooltip-codl, 
+.grid-card-content:hover .tooltip-ibs,  
+.grid-card-content:hover .tooltip-ioe, 
+.grid-card-content:hover .tooltip-remes,  
+ .grid-card-content:hover .tooltip-uitics,  
+.grid-card-content:hover .tooltip-inter-uni
+
+{
+    opacity: 1;
+    
+}
