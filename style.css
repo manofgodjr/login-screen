@@ -4,7 +4,7 @@
 }
 
     .right-side{
-        width: 390px;
+        width: 100%;
     }
     .logo-textfield-container{
         width: 100%;
@@ -19,7 +19,7 @@
     .grid-card-content{
 
 
-        width: 90vw;
+        width: 101px;
         height: 321px;
 
     
