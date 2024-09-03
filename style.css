@@ -3,27 +3,7 @@
     display: none;
 }
 
-    .right-side{
-        width: 100%;
-    }
-    .logo-textfield-container{
-        width: 100%;
-    }
-    .logo-textfield-container input{
-     
-       width: 100px;
-       max-width: 100%;
 
-    }
-
-    .grid-card-content{
-
-
-        width: 101px;
-        height: 321px;
-
-    
-    }
 
 
 }
