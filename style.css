@@ -4,18 +4,13 @@
 }
 
     .right-side{
-        scrollbar-width: 0px;
-        width: 290px;
-        background-color: yellow;
-        position: sticky;
+        width: 390px;
     }
     .logo-textfield-container{
-        background-color: blue;
         width: 100%;
     }
     .logo-textfield-container input{
      
-       background-color: green;
        width: 100px;
        max-width: 100%;
 
@@ -24,7 +19,7 @@
     .grid-card-content{
 
 
-        width: 101px;
+        width: 201px;
         height: 321px;
 
     
