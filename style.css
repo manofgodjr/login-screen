@@ -1,7 +1,35 @@
 @media (max-width:647px){
 .left-side .imgbox img{
-        display: none;    
+    content-visibility: hidden;
+}
+
+    .right-side{
+        scrollbar-width: 0px;
+        width: 290px;
+        background-color: yellow;
+        position: sticky;
     }
+    .logo-textfield-container{
+        background-color: blue;
+        width: 100%;
+    }
+    .logo-textfield-container input{
+     
+       background-color: green;
+       width: 100px;
+       max-width: 100%;
+
+    }
+
+    .grid-card-content{
+
+
+        width: 101px;
+        height: 321px;
+
+    
+    }
+
 
 }
 
@@ -37,6 +65,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    scrollbar-width: 0px;
 
 }
 .logo-textfield-container{
@@ -84,7 +113,10 @@
 .grid-card{
     overflow: hidden;
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    /* grid-template-columns: 4fr 4fr 4fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+
 }
 
 .grid-card .grid-card-content{
@@ -94,12 +126,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 91%;
-    height: 200px;
+    /* width: 91%;
+    height: 221px; */
     margin-left: 11px;
     margin-bottom: 11px;
- 
+    aspect-ratio: auto;
     padding-top: 0px;
+
+    /* block-size: border-box; */
+
 }
 .tooltip-post-utme,
 .tooltip-inter-uni,
