@@ -1,6 +1,6 @@
 @media (max-width:647px){
-.left-side .imgbox img{
-    content-visibility: hidden;
+.left-side{
+    display: none;
 }
 
     .right-side{
