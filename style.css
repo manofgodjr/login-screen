@@ -101,8 +101,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 91%;
-    height: 221px; */
+    width: 100%;
+    height: 221px;
     margin-left: 11px;
     margin-bottom: 11px;
     aspect-ratio: auto;
