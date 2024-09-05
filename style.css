@@ -1,7 +1,6 @@
 @media (max-width:647px){
     .container-wrapper{
-    display: grid;
-    grid-template-columns: 8fr;
+  width: 100%;
 
 }
 .left-side{
