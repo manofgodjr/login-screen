@@ -1,7 +1,7 @@
 @media (max-width:647px){
     .container-wrapper{
     display: grid;
-    grid-template-columns: 12fr;
+    grid-template-columns: 8fr;
 
 }
 .left-side{
@@ -41,7 +41,7 @@
 
 /* beginning of right side container */
 .right-side{
-        width: 65%;
+    width: 65%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
