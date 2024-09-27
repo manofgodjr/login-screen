@@ -1,46 +1,61 @@
-@media (max-width:647px){
-    .container-wrapper{
-    display: grid;
-    grid-template-columns: 8fr;
-
-}
-.left-side{
-    display: none;
-}
-
+@media  (max-width: 768px) {
+    
+    .left-side{
+    display: none;    
+    overflow: hidden;
+    
+    }
     .right-side{
-        width: 100%;
+        display: inline;
+        min-width: 421px;
+        overflow: hidden;
+        
+        
     }
 
+    .grid-card-content{
+        min-width: 21px;
+        overflow: hidden;
+    }
 
-
+    .logo-textfield-container input{
+        max-width: 80%;
+        overflow: hidden;
+    }
+  
 }
+
+
 .container-wrapper{
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 4fr 8fr;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
 
 }
 /* beginning of the left side container */
 .left-side{
-   width: 35%;
+    width: 35%;
     overflow: hidden;
-   
+    height: 100vh;
  
 
 
 }
 
 
-.left-side .imgbox img{
-    width: 100%;
-    height: 100vh;
+.left-side  img{
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
   
 
 }
 
 /* beginning of right side container */
 .right-side{
+
     width: 65%;
     overflow: hidden;
     display: flex;
@@ -56,6 +71,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95%;
   
 
 }
@@ -65,26 +81,36 @@
     padding-top: 8px;
     font-size: 1.45rem;
     margin-bottom: 21px;
+    overflow: hidden;
 }
 .logo-textfield-container img{
-    height: 120px;
     margin-top: 11px;
+    width: 151px;
+    height: 171px;
+    overflow: hidden;
 }
 .logo-textfield-container input{
-    width: 40vw;
-    height: 40px;
     border: 2px solid rgb(0, 4, 75);
     border-radius: 3px;
     margin-bottom: 21px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px;
+    height: 41px;
+    width: 81%;
+    overflow: hidden;
+
 }
 .logo-textfield-container button{
-    width: 41vw;
-    height: 41px;
     border: 1px solid rgb(0, 4, 75);
     border-radius: 3px;
     background-color: rgb(0, 4, 75);
     color: #fff;
     margin-bottom: 41px;
+    height: 41px;
+    width: 82%;
+    overflow: hidden;
 
 
 }
@@ -95,52 +121,27 @@
 .grid-card{
     overflow: hidden;
     display: grid;
-    /* grid-template-columns: 4fr 4fr 4fr; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: 4fr 4fr 4fr;
+    width: fit-content;
 
 }
 
-.grid-card .grid-card-content{
+.grid-card-content{
 
     border-radius: 5px;
     box-shadow: 3px 5px 15px rgb(0, 0, 0, .4);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: 11px;
+    justify-content: start;
+    margin-right: 17px;
     margin-bottom: 11px;
-    aspect-ratio: auto;
     padding-top: 0px;
     overflow: hidden;
+    flex-shrink: 1;
 
-    /* block-size: border-box; */
-
-}
-.tooltip-post-utme,
-.tooltip-inter-uni,
-.tooltip-uitics,
-.tooltip-remes,
-.tooltip-codl,
-.tooltip-ibs,
-.tooltip-ccsca,
-.tooltip-ioe,
-.tooltip-cmli,
-.tooltip-jupeb
-
-{
-    background-color: lightgray;
-    opacity: 0;
-    position: absolute;
-    color: white;
-    padding: 4px;
-    bottom: -41px;
-    text-wrap: nowrap;
-    font-size: small;
-    z-index: 100;
+    block-size: border-box;
 
 }
-
 .grid-card-content, a{
 text-align: center;
 text-overflow:clip;
@@ -148,15 +149,17 @@ text-wrap:wrap;
 text-align-last: center;
 text-decoration-color: rgba(0, 0, 0, .87);
 cursor: pointer;
+overflow: hidden;
 }
 
 .grid-card-content, h5{
-    text-align: center;
 color: black;    
 text-wrap:wrap;
 font-size: 0.85rem;
-text-align: center;
+text-align:center;
 margin-bottom: 19px;
+overflow: hidden;
+
 
 }
 
@@ -168,6 +171,7 @@ margin-bottom: 19px;
     margin-bottom: 19px;
     text-wrap:wrap;
     text-overflow: clip;
+    overflow: hidden;
 
 }
 
@@ -185,4 +189,28 @@ margin-bottom: 19px;
 {
     opacity: 1;
     
+}
+
+.tooltip-post-utme,
+.tooltip-inter-uni,
+.tooltip-uitics,
+.tooltip-remes,
+.tooltip-codl,
+.tooltip-ibs,
+.tooltip-ccsca,
+.tooltip-ioe,
+.tooltip-cmli,
+.tooltip-jupeb
+
+{
+    background-color: lightgray;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    padding: 4px;
+    text-wrap: nowrap;
+    font-size: small;
+    z-index: 100;
+    overflow: hidden;
+
 }
