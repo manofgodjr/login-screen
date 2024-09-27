@@ -19,14 +19,22 @@
     }
 
     .logo-textfield-container input{
-        max-width: 65%;
+        max-width: 77%;
         overflow: hidden;
     }
     .logo-textfield-container button{
-        max-width: 66%;
+        max-width: 78%;
         overflow: hidden;
     }
-  
+      .container-wrapper{
+        margin: 0px;
+        overflow: hidden;
+    }
+     body {position: relative;}
+       html, body {
+        margin: 0; 
+        overflow: hidden;   
+    }
 }
 
 
