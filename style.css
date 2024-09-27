@@ -7,19 +7,23 @@
     }
     .right-side{
         display: inline;
-        min-width: 421px;
+        min-width: 321px;
         overflow: hidden;
         
         
     }
 
     .grid-card-content{
-        min-width: 21px;
+        min-width: 11px;
         overflow: hidden;
     }
 
     .logo-textfield-container input{
-        max-width: 80%;
+        max-width: 50%;
+        overflow: hidden;
+    }
+    .logo-textfield-container button{
+        max-width: 51%;
         overflow: hidden;
     }
   
