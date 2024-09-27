@@ -7,7 +7,7 @@
     }
     .right-side{
         display: inline;
-        min-width: 321px;
+        min-width: 81%;
         overflow: hidden;
         
         
@@ -19,11 +19,11 @@
     }
 
     .logo-textfield-container input{
-        max-width: 50%;
+        max-width: 65%;
         overflow: hidden;
     }
     .logo-textfield-container button{
-        max-width: 51%;
+        max-width: 66%;
         overflow: hidden;
     }
   
